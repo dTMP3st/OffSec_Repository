@@ -1,7 +1,7 @@
 # *NIX
 
 ## Linux Network Commands:
-Command                             | Description
+Command                                      | Description
 -------------------------------------------- | ------------------------
 watch ss -tp                                 | Network connections
 netstat -ant                                 | Tcp connections
@@ -30,3 +30,12 @@ ip addr add <ip>/<cird> dev eth0             | Adds `hidden' interface
 tcpkill host <ip> and port <port>            | Block ip:port
 echo "1" > /proc/sys/net/ipv4/ip_forward     | Turn on IP Forwarding
 echo "nameserver x.x.x.x" > /etc/resolv.conf | Add DNS Server
+
+## Linux System Info
+Command                                      | Description
+-------------------------------------------- | ------------------------
+nbtstat -A <ip>                              | Get hostname for <ip>
+id                                           | Current username
+w                                            | Logged on user
+who -a                                       | User information
+last -a                                      | Last users logged on
