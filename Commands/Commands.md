@@ -39,3 +39,8 @@ id                                           | Current username
 w                                            | Logged on user
 who -a                                       | User information
 last -a                                      | Last users logged on
+ps -ef                                       | Process listing (top)
+df -h                                        | Disk usage (free)
+uname -a                                     | Kernel version/CPU info
+mount                                        | Mounted file systems
+getent passwd                                | Show list of users
