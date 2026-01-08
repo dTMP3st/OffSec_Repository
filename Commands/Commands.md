@@ -44,3 +44,15 @@ df -h                                        | Disk usage (free)
 uname -a                                     | Kernel version/CPU info
 mount                                        | Mounted file systems
 getent passwd                                | Show list of users
+PATH=$PATH:/home/mypath                      | Add to PATH variable
+kill <pid>                                   | kills process with <pid>
+cat /etc/issue                               | Show OS info
+cat /etc/*release*                           | Show OS version info
+cat /proc/version                            | Show kernel info
+rpm --query -all                             | Installed pkgs (Redhat)
+rpm -ivh *.rpm                               | Install RPM (-e=remove)
+dpkg -get-selections                         | Installed pkgs (Ubuntu)
+dpkg -I *.deb                                | Install DEB (-r=remove)
+pkginfo                                      | Installed pkgs (Solaris)
+which <tscsh/csh/ksh/bash>                   | Show location of executable
+chmod 750 <tcsh/csh/ksh>                     | Disable <shell>, force bash
