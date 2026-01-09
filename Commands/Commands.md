@@ -56,3 +56,8 @@ dpkg -I *.deb                                | Install DEB (-r=remove)
 pkginfo                                      | Installed pkgs (Solaris)
 which <tscsh/csh/ksh/bash>                   | Show location of executable
 chmod 750 <tcsh/csh/ksh>                     | Disable <shell>, force bash
+
+## Linux Utility Commands
+Command                                      | Description
+-------------------------------------------- | ------------------------
+wget http://<url> -O url.txt -o /dev/null    | Grab url
