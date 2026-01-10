@@ -61,3 +61,5 @@ chmod 750 <tcsh/csh/ksh>                     | Disable <shell>, force bash
 Command                                      | Description
 -------------------------------------------- | ------------------------
 wget http://<url> -O url.txt -o /dev/null    | Grab url
+rdesktop <ip>                                | Remote Desktop to <ip>
+scp /tmp/file user@x.x.x.x:/tmp/file         | Put file
