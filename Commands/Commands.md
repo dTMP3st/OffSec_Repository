@@ -64,3 +64,10 @@ wget http://<url> -O url.txt -o /dev/null    | Grab url
 rdesktop <ip>                                | Remote Desktop to <ip>
 scp /tmp/file user@x.x.x.x:/tmp/file         | Put file
 scp user@<remoteip>:/tmp/file /tmp/file      | Get file
+useradd -m <user>                            | Add user
+passwd <user>                                | Change user password
+rmuser uname                                 | Remover user
+script -a <outfile>                          | Record shell : Ctrl-D stops
+apropos <subject>                            | Find related command
+history                                      | View users command history
+!<num>                                       | Executes line # in history
