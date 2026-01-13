@@ -71,3 +71,10 @@ script -a <outfile>                          | Record shell : Ctrl-D stops
 apropos <subject>                            | Find related command
 history                                      | View users command history
 !<num>                                       | Executes line # in history
+
+## Linux File Commands
+Command                                      | Description
+-------------------------------------------- | ------------------------
+diff file1 file2                             | Compare files
+rm -rf <dir>                                 | Force delete of <dir>
+shred -f -u <file>                           | Overwrite/delete file
