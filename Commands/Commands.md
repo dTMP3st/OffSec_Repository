@@ -82,3 +82,4 @@ touch -r <ref_file> <file>                   | Matches ref_file timestamp
 touch -t YYYYMMDDHHSS <file>                 | Set file timestamp
 sudo fdisk -l                                | List connected drives
 mount /dev/sda# /mnt/usbkey                  | Mount USB key
+md5sum -t file                               | Compute md5 hash
