@@ -83,3 +83,17 @@ touch -t YYYYMMDDHHSS <file>                 | Set file timestamp
 sudo fdisk -l                                | List connected drives
 mount /dev/sda# /mnt/usbkey                  | Mount USB key
 md5sum -t file                               | Compute md5 hash
+echo -n "str" | md5sum                       | Generate md5 hash
+sha1sum file                                 | SHA1 hash of file
+sort -u                                      | Sort/show unique lines
+grep -c "str" file                           | Count lines w/ "str"
+tar cf file.tar files                        | Create .tar from files
+tar xf file.tar                              | Extract .tar
+tar czf file.tar.gz files                    | Create .tar.gz
+tar xzf file.tar.gz                          | Extract .tar.gz
+tar cjf file.tar.bz2 files                   | Create .tar.bz2
+tar xjf file.tar.bz2                         | Extract .tar.bz2
+gzip file                                    | Compress/rename file
+gzip -d file.gz                              | Decompress file.gz
+upx -9 -o out.exe orig.exe                   | UPX packs orig.exe
+zip -r <zipname.zip> \Directory\*            | Create zip
