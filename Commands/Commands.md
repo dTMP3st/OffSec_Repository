@@ -97,3 +97,4 @@ gzip file                                    | Compress/rename file
 gzip -d file.gz                              | Decompress file.gz
 upx -9 -o out.exe orig.exe                   | UPX packs orig.exe
 zip -r <zipname.zip> \Directory\*            | Create zip
+dd skip=1000 count=2000 bs=8 if=file of=file | Cut block 1K-3K from file
