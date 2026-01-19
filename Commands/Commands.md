@@ -99,3 +99,4 @@ upx -9 -o out.exe orig.exe                   | UPX packs orig.exe
 zip -r <zipname.zip> \Directory\*            | Create zip
 dd skip=1000 count=2000 bs=8 if=file of=file | Cut block 1K-3K from file
 split -b 9K \<fiile> <prefix>                | Split file into 9K chunks
+awk 'sub("$"."\r")' unix.txt > win.txt       | Win xompatible txt file
