@@ -105,3 +105,8 @@ find / -perm -4000 -o -perm -2000 -exec ls -ldb { } \; | Search for setuid files
 dos2unix <file>                                        | Convert to *nix format
 file <file>                                            | Determine file type/info
 chattr (+/-)i <file>                                   | Set/Unset immutable bit
+
+## Linux Misc Commands
+Command                                                | Description
+------------------------------------------------------ | ----------------------------------
+unset HISTFILE                                         | Disable history logging
