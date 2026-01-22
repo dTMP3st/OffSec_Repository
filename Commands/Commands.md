@@ -110,3 +110,6 @@ chattr (+/-)i <file>                                   | Set/Unset immutable bit
 Command                                                | Description
 ------------------------------------------------------ | ----------------------------------
 unset HISTFILE                                         | Disable history logging
+ssh user@<ip> arecord - | aplay -                      | Record remote mic
+gcc -o outfile myfile.c                                | Compile C,C++
+init 6                                                 | Reboot (0 = shutdown)
