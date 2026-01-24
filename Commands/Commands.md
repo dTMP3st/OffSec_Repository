@@ -114,4 +114,5 @@ ssh user@<ip> arecord - | aplay -                           | Record remote mic
 gcc -o outfile myfile.c                                     | Compile C,C++
 init 6                                                      | Reboot (0 = shutdown)
 cat /etc/*syslog*.conf | grep -v "^#"                       | List of log files
-grep 'href=' <file> | cut -d "/" -f3 | grep <url> | sort -u | strip links in url.com 
+grep 'href=' <file> | cut -d "/" -f3 | grep <url> | sort -u | strip links in url.com
+dd if=/dev/urandom of=<file> bs=3145728 count=100           | Make random 3MB file
