@@ -116,3 +116,7 @@ init 6                                                      | Reboot (0 = shutdo
 cat /etc/*syslog*.conf | grep -v "^#"                       | List of log files
 grep 'href=' <file> | cut -d "/" -f3 | grep <url> | sort -u | strip links in url.com
 dd if=/dev/urandom of=<file> bs=3145728 count=100           | Make random 3MB file
+
+## Linux "cover your tracks" commands
+Command                                                     | Description
+----------------------------------------------------------- | ---------------------------------------
