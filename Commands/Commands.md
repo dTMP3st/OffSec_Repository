@@ -120,3 +120,4 @@ dd if=/dev/urandom of=<file> bs=3145728 count=100           | Make random 3MB fi
 ## Linux "cover your tracks" commands
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
+echo "" > /var/log/auth.log                                 | Clear auth.log file
