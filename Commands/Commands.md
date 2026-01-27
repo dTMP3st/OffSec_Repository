@@ -121,3 +121,4 @@ dd if=/dev/urandom of=<file> bs=3145728 count=100           | Make random 3MB fi
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
 echo "" > /var/log/auth.log                                 | Clear auth.log file
+echo "" > ~/.bash_history                                   | Clear current user bash history
