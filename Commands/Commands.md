@@ -122,3 +122,7 @@ Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
 echo "" > /var/log/auth.log                                 | Clear auth.log file
 echo "" > ~/.bash_history                                   | Clear current user bash history
+rm ~/.bash_history -rf                                      | Delete .bash_history file
+history -c                                                  | Clear current session history
+export HISTFILESIZE=0                                       | Set history max lines to 0
+export HISTSIZE=0                                           | Set history max commands to 0
