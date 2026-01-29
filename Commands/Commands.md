@@ -126,3 +126,6 @@ rm ~/.bash_history -rf                                      | Delete .bash_histo
 history -c                                                  | Clear current session history
 export HISTFILESIZE=0                                       | Set history max lines to 0
 export HISTSIZE=0                                           | Set history max commands to 0
+unset HISTFILE                                              | Disable history logging (need to logout to take effect)
+kill -9 $$                                                  | Kills current session
+ln /dev/null ~/.bash_history -sf                            | Permanently send all bash history commands to /dev/null
