@@ -129,3 +129,7 @@ export HISTSIZE=0                                           | Set history max co
 unset HISTFILE                                              | Disable history logging (need to logout to take effect)
 kill -9 $$                                                  | Kills current session
 ln /dev/null ~/.bash_history -sf                            | Permanently send all bash history commands to /dev/null
+
+## Linux File System Structure
+Command                                                     | Description
+----------------------------------------------------------- | ---------------------------------------
