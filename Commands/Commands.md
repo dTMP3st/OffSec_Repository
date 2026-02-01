@@ -133,3 +133,4 @@ ln /dev/null ~/.bash_history -sf                            | Permanently send a
 ## Linux File System Structure
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
+/bin | User binaries
