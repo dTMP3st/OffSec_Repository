@@ -133,4 +133,16 @@ ln /dev/null ~/.bash_history -sf                            | Permanently send a
 ## Linux File System Structure
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
-/bin | User binaries
+/bin                                                        | User binaries
+/boot                                                       | Boot-up related files
+/dev                                                        | Interface for system devices
+/etc                                                        | System configuration files
+/home                                                       | Base directory for user files
+/lib                                                        | Critical software libraries
+/opt                                                        | Third party software
+/proc                                                       | System and running programs
+/root                                                       | Home directory of root user
+/sbin                                                       | System administrator binaries
+/tmp                                                        | Temporary files
+/usr                                                        | Less critical files
+/var                                                        | Variable system files
