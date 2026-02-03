@@ -146,3 +146,8 @@ Command                                                     | Description
 /tmp                                                        | Temporary files
 /usr                                                        | Less critical files
 /var                                                        | Variable system files
+
+## Linux Files
+Command                                                     | Description
+----------------------------------------------------------- | ---------------------------------------
+/etc/shadow                                                 | Local users` hashes
