@@ -151,3 +151,5 @@ Command                                                     | Description
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
 /etc/shadow                                                 | Local users` hashes
+/etc/passwd                                                 | Local users
+/etc/group                                                  | Local groups
