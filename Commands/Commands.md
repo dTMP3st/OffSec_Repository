@@ -153,3 +153,6 @@ Command                                                     | Description
 /etc/shadow                                                 | Local users` hashes
 /etc/passwd                                                 | Local users
 /etc/group                                                  | Local groups
+/etc/rc.d                                                   | Startup services
+/etc/init.d                                                 | Service
+/etc/hosts                                                  | Known hostnames and IPs
