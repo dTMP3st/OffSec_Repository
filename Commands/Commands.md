@@ -156,3 +156,4 @@ Command                                                     | Description
 /etc/rc.d                                                   | Startup services
 /etc/init.d                                                 | Service
 /etc/hosts                                                  | Known hostnames and IPs
+/etc/HOSTNAME | Full hostname with domain
