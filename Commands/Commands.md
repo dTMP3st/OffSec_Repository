@@ -156,5 +156,9 @@ Command                                                     | Description
 /etc/rc.d                                                   | Startup services
 /etc/init.d                                                 | Service
 /etc/hosts                                                  | Known hostnames and IPs
-/etc/HOSTNAME | Full hostname with domain
-/etc/network/interfaces | Network configuration
+/etc/HOSTNAME                                               | Full hostname with domain
+/etc/network/interfaces                                     | Network configuration
+/etc/profile                                                | System environment variables
+/etc/apt/sources.list                                       | Ubuntu sources list
+/etc/resolv.conf                                            | Nameserver configuration
+/home/<user>/.bash_history                                  | Bash history (also /root/)
