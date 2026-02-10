@@ -162,3 +162,10 @@ Command                                                     | Description
 /etc/apt/sources.list                                       | Ubuntu sources list
 /etc/resolv.conf                                            | Nameserver configuration
 /home/<user>/.bash_history                                  | Bash history (also /root/)
+/usr/share/wireshark/manuf                                  | Vendor-MAC lookup
+~/.ssh/                                                     | SSH keystore
+/var/log                                                    | System log files (most Linux)
+/var/adm                                                    | System log files (Unix)
+/var/spool/cron                                             | List cron files
+/var/log/apache/access.log                                  | Apache connection log
+/etc/fstab                                                  | Static file system info
