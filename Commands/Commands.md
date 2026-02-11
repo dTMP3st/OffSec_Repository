@@ -169,3 +169,7 @@ Command                                                     | Description
 /var/spool/cron                                             | List cron files
 /var/log/apache/access.log                                  | Apache connection log
 /etc/fstab                                                  | Static file system info
+
+## Linux Scripting
+### Ping Sweep
+for x in {1..254..1}; do ping -c 1 1.1.1.$x | grep "64 b" | cut -d " " -f4 >> ips.txt; done
