@@ -181,3 +181,9 @@ read Range
 for IP in {1..254..1};do
 host $Range.$IP | grep "name pointer" | cut -d " " -f5
 done
+
+### Fork Bomb (Creates Processes Until System "Crashes")
+:(){:|:&};:
+
+### DNS Reverse Lookup
+for ip in {1..254..1}; do dig -x 1.1.1.$ip | grep $ip >> dns.txt; done;
