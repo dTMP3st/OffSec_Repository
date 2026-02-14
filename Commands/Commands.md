@@ -187,3 +187,5 @@ done
 
 ### DNS Reverse Lookup
 for ip in {1..254..1}; do dig -x 1.1.1.$ip | grep $ip >> dns.txt; done;
+
+### IP Banning Script
