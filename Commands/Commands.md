@@ -192,3 +192,6 @@ for ip in {1..254..1}; do dig -x 1.1.1.$ip | grep $ip >> dns.txt; done;
 \#!/bin/sh
 \# This script bans any IP in the /24 subnet for 192.168.1.0 starting at 2
 \# It assumes 1 is the router and does not ban IPs .20, .21, .22
+i=2
+while [ $i -le 253 ]
+do
