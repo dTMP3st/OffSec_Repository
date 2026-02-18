@@ -195,3 +195,5 @@ for ip in {1..254..1}; do dig -x 1.1.1.$ip | grep $ip >> dns.txt; done;
 i=2
 while [ $i -le 253 ]
 do
+    if [ $i -ne 20 -a $i -ne 21 -a $i -ne 22 ]; then
+        echo ""
