@@ -207,3 +207,6 @@ done
 
 ### SSH Callback
 Set up script in crontab to callback every X minutes. Highly recommend you set up a generic user on red team computer (with no shell privs). Script will use the private key (located on callback source computer) to connect to a public key (on red team computer). Red teamer connects to target via a local SSH session (in the example below, use \#ssh -p4040 localhost)
+
+#!/bin/bash
+# Callback script located on callback source computer (target)
