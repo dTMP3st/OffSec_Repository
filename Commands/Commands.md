@@ -210,3 +210,7 @@ Set up script in crontab to callback every X minutes. Highly recommend you set u
 
 #!/bin/bash
 # Callback script located on callback source computer (target)
+killall ssh >/dev/null 2>&1
+sleep 5
+REMLIS=4040
+REMUSR=user
