@@ -221,3 +221,8 @@ do
     if [[ $COUNT -gt 0 ]]; then
         ssh -R ${REMLIS}:localhost:22 -i "/home/${REMUSR}/.ssh/id_rsa" -N ${LIVEHOST} -l ${REMUSR}
     fi
+
+## IPTables
+\* Use ip6tables for IPv6 rules
+Command                                                     | Description
+----------------------------------------------------------- | ---------------------------------------
