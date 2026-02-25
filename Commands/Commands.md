@@ -226,3 +226,4 @@ do
 \* Use ip6tables for IPv6 rules
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
+iptables-save -c > <file>                                   | Dump iptables (with counters) rules to stdout
