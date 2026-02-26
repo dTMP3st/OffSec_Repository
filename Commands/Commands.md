@@ -227,3 +227,4 @@ do
 Command                                                     | Description
 ----------------------------------------------------------- | ---------------------------------------
 iptables-save -c > <file>                                   | Dump iptables (with counters) rules to stdout
+iptables-restore <file>                                     | Restore iptables rules
