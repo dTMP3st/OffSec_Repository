@@ -229,3 +229,4 @@ Command                                                     | Description
 iptables-save -c > <file>                                   | Dump iptables (with counters) rules to stdout
 iptables-restore <file>                                     | Restore iptables rules
 iptables -L -v --line-numbers                               | List all iptables rules with affected and line numbers
+iptables -F                                                 | Flush all iptables rules
