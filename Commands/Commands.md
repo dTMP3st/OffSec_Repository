@@ -230,3 +230,4 @@ iptables-save -c > <file>                                   | Dump iptables (wit
 iptables-restore <file>                                     | Restore iptables rules
 iptables -L -v --line-numbers                               | List all iptables rules with affected and line numbers
 iptables -F                                                 | Flush all iptables rules
+ipables -P <INPUT/FORWARD/OUTPUT> <ACCEPT/REJECT/DROP>      | Change default policy for rules that don't match rules 
