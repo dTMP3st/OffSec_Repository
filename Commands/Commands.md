@@ -224,10 +224,11 @@ do
 
 ## IPTables
 \* Use ip6tables for IPv6 rules
-Command                                                     | Description
------------------------------------------------------------ | ---------------------------------------
-iptables-save -c > <file>                                   | Dump iptables (with counters) rules to stdout
-iptables-restore <file>                                     | Restore iptables rules
-iptables -L -v --line-numbers                               | List all iptables rules with affected and line numbers
-iptables -F                                                 | Flush all iptables rules
-ipables -P <INPUT/FORWARD/OUTPUT> <ACCEPT/REJECT/DROP>      | Change default policy for rules that don't match rules 
+Command                                                                          | Description
+-------------------------------------------------------------------------------- | ---------------------------------------
+iptables-save -c > <file>                                                        | Dump iptables (with counters) rules to stdout
+iptables-restore <file>                                                          | Restore iptables rules
+iptables -L -v --line-numbers                                                    | List all iptables rules with affected and line numbers
+iptables -F                                                                      | Flush all iptables rules
+ipables -P <INPUT/FORWARD/OUTPUT> <ACCEPT/REJECT/DROP>                           | Change default policy for rules that don't match rules
+iptables -A INPUT -i <interface> -m state --state RELATED, ESTABLISHED -j ACCEPT | Allow established connections on INPUT
