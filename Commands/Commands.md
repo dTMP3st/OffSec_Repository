@@ -232,3 +232,6 @@ iptables -L -v --line-numbers                                                   
 iptables -F                                                                      | Flush all iptables rules
 ipables -P <INPUT/FORWARD/OUTPUT> <ACCEPT/REJECT/DROP>                           | Change default policy for rules that don't match rules
 iptables -A INPUT -i <interface> -m state --state RELATED, ESTABLISHED -j ACCEPT | Allow established connections on INPUT
+iptables -D INPUT 7                                                              | Delete 7th inbound rule
+iptables -t raw -L -n                                                            | Increase throughput by turning off statefulness
+iptables -P INPUT DROP                                                           | Drop all packets
