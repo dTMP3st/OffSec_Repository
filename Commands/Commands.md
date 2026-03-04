@@ -235,3 +235,6 @@ iptables -A INPUT -i <interface> -m state --state RELATED, ESTABLISHED -j ACCEPT
 iptables -D INPUT 7                                                              | Delete 7th inbound rule
 iptables -t raw -L -n                                                            | Increase throughput by turning off statefulness
 iptables -P INPUT DROP                                                           | Drop all packets
+
+## Allow SSH on port 22 outbound
+\> iptables -A OUTPUT -o <iface> -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
