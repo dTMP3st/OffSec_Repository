@@ -239,3 +239,7 @@ iptables -P INPUT DROP                                                          
 ## Allow SSH on port 22 outbound
 \> iptables -A OUTPUT -o <iface> -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
 \> iptables -A INPUT -i <iface> -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+## Allow ICMP Outbound
+\> iptables -A OUTPUT -i <iface> -p icmp --icmp-type echo-request -j ACCEPT
+\> iptables -A INPUT -o <iface> -p icmp --icmp-type echo-reply -j ACCEPT
