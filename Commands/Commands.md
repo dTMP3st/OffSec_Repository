@@ -243,3 +243,6 @@ iptables -P INPUT DROP                                                          
 ## Allow ICMP Outbound
 \> iptables -A OUTPUT -i <iface> -p icmp --icmp-type echo-request -j ACCEPT
 \> iptables -A INPUT -o <iface> -p icmp --icmp-type echo-reply -j ACCEPT
+
+## Port Forward
+\> echo "1" > /proc/sys/net/ipv4/ip_forward
