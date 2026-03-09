@@ -246,3 +246,4 @@ iptables -P INPUT DROP                                                          
 
 ## Port Forward
 \> echo "1" > /proc/sys/net/ipv4/ip_forward
+\# OR -> sysctl net.ipv4.ip_forward=1
