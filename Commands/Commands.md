@@ -250,3 +250,6 @@ iptables -P INPUT DROP                                                          
 \> iptables -t nat -A PREROUTING -p tcp -i eth0 -j DNAT -d <pivotip> --dport 443 -to-destination <attk_ip>:443
 \> iptables -t nat -A POSTROUTING -p tcp -i eth0 -j SNAT -s <target subnet cidr> -d <attackip> --dport 443 -to-source <pivotip>
 \> iptables -t filter -I FORWARD 1 -j ACCEPT
+
+## Allow Only 1.1.1.0/24, Ports 80, 443 And Log Drops to /var/log/messages
+\> iptables -A INPUT -s 1.1.1.0/24 -m state --state RELATED,ESTABLISHED,NEW -p tcp -m multiport --dports 80, 443 -j ACCEPT
