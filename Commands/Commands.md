@@ -253,3 +253,4 @@ iptables -P INPUT DROP                                                          
 
 ## Allow Only 1.1.1.0/24, Ports 80, 443 And Log Drops to /var/log/messages
 \> iptables -A INPUT -s 1.1.1.0/24 -m state --state RELATED,ESTABLISHED,NEW -p tcp -m multiport --dports 80, 443 -j ACCEPT
+\> iptables -A INPUT -i eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
