@@ -255,3 +255,4 @@ iptables -P INPUT DROP                                                          
 \> iptables -A INPUT -s 1.1.1.0/24 -m state --state RELATED,ESTABLISHED,NEW -p tcp -m multiport --dports 80, 443 -j ACCEPT
 \> iptables -A INPUT -i eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 \> iptables -P INPUT DROP
+\> iptables -A OUTPUT -o eth0 -j ACCEPT
