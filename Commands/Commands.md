@@ -256,3 +256,4 @@ iptables -P INPUT DROP                                                          
 \> iptables -A INPUT -i eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 \> iptables -P INPUT DROP
 \> iptables -A OUTPUT -o eth0 -j ACCEPT
+\> iptables -A INPUT -i lo -j ACCEPT
