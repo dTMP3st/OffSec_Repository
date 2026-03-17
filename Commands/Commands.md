@@ -257,3 +257,4 @@ iptables -P INPUT DROP                                                          
 \> iptables -P INPUT DROP
 \> iptables -A OUTPUT -o eth0 -j ACCEPT
 \> iptables -A INPUT -i lo -j ACCEPT
+\> iptables -A OUTPUT -o lo -j ACCEPT
