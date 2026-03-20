@@ -260,3 +260,4 @@ iptables -P INPUT DROP                                                          
 \> iptables -A OUTPUT -o lo -j ACCEPT
 \> iptables -N LOGGING
 \> iptables -A INPUT -j LOGGING
+\> iptables -A LOGGING -m limit --limit 4/min -j LOG --log-prefix "DROPPED "
