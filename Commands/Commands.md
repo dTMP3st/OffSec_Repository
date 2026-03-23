@@ -2,7 +2,7 @@ ui# *NIX
 
 ## Linux Network Commands:
 Command                                                     | Description
------------------------------------------------------------ | ---------------------------------------
+----------------------------------------------------------- | --------------------------------------
 watch ss -tp                                                | Network connections
 netstat -ant                                                | Tcp connections
 netstat -anu                                                | Udp connections
@@ -261,4 +261,4 @@ iptables -P INPUT DROP                                                          
 \> iptables -N LOGGING
 \> iptables -A INPUT -j LOGGING
 \> iptables -A LOGGING -m limit --limit 4/min -j LOG --log-prefix "DROPPED "
-\> iptables
+\> 
