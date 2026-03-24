@@ -262,3 +262,6 @@ iptables -P INPUT DROP                                                          
 \> iptables -A INPUT -j LOGGING
 \> iptables -A LOGGING -m limit --limit 4/min -j LOG --log-prefix "DROPPED "
 \> iptables -A LOGGING -j DROP
+
+## Update-Rc.D
+\* Check/change startup services
