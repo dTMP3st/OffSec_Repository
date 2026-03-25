@@ -265,3 +265,7 @@ iptables -P INPUT DROP                                                          
 
 ## Update-Rc.D
 \* Check/change startup services
+Command                                                                          | Description
+-------------------------------------------------------------------------------- | ---------------------------------------
+service --status-all                                                             | [+] Service starts at boot
+                                                                                 | [-] Service does not start
