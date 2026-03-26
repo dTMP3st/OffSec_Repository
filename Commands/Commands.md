@@ -269,3 +269,4 @@ Command                                                                         
 -------------------------------------------------------------------------------- | ---------------------------------------
 service --status-all                                                             | [+] Service starts at boot
                                                                                  | [-] Service does not start
+service <service> start                                                          | Start a service
